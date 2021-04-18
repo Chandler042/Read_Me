@@ -5,7 +5,7 @@ const documentGenerator = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: "input"
+        type: "input",
         name: "Author",
         message: "Enter author's (your) name:",
     },
@@ -57,10 +57,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((userInput) => {
+            fs.writeFile("GenerateReadMe.md", documentGenerator(userInput), function (err) {
+                if (err) throw err;
+                    console.log("New file successfully written.");
+            });
+        })
+        .catch((err) => {
+            if (err) throw err;
+        });
+}
 
 // Function call to initialize app
 init();
