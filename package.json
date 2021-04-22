@@ -1,13 +1,21 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run node.js to generate a ReadMe by answering prompts.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandler042/read_me.git"
+  },
+  "author": "Chandler Organ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chandler042/Read_Me/issues"
+  },
+  "homepage": "https://github.com/chandler042/read_me#readme",
   "dependencies": {
     "inquirer": "^6.3.1"
   }
