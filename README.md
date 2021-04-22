@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This is a CLI designed to help developers produce a professionally structured README markdown file for use on project repositories.
+This is a CLI designed to help developers produce a professionally structured README markdown file for use on project repositories. Video Link: https://www.youtube.com/watch?v=p4SCoskRX04
 ***
 
 ## Table of Contents
